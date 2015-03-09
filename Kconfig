@@ -14,6 +14,9 @@ config PROC_CORTEX_A9
 config PROC_CORTEX_A8
 	bool "Cortex-A8"
 
+config PROC_CORTEX_A7
+	bool "Cortex-A7"
+
 config PROC_ARM1176JZFS
 	bool "ARM1176JZF-S"
 
@@ -45,6 +48,10 @@ config BOARD_OMAP34XX
 config BOARD_AM335X
 	bool "Texas Instruments AM335X"
 	depends on PROC_CORTEX_A8
+
+config BOARD_BCM2836
+	bool "Broadcom BCM2836"
+	depends on PROC_CORTEX_A7
 
 endchoice
 
