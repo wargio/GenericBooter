@@ -22,6 +22,7 @@ platname-$(CONFIG_BOARD_ARM_REALVIEW) 		+= "RealView"
 platname-$(CONFIG_BOARD_HPTOUCHPAD)		+= "HP-TouchPad"
 platname-$(CONFIG_BOARD_HTC_HD2)		+= "HTC-HD2"
 platname-$(CONFIG_BOARD_BCM2836)		+= "BCM2836"
+platname-$(CONFIG_BOARD_IMX53_USBARMORY)	+= "IMX53-USBarmory"
 
 export platname-y := $(platname-y)
 
@@ -52,6 +53,7 @@ textofs-$(CONFIG_BOARD_ARM_REALVIEW)	:= 0x84000040
 textofs-$(CONFIG_BOARD_HPTOUCHPAD)	:= 0x44000040
 textofs-$(CONFIG_BOARD_HTC_HD2)		:= 0x11808000
 textofs-$(CONFIG_BOARD_BCM2836)		:= 0x00008000
+textofs-$(CONFIG_BOARD_IMX53_USBARMORY)	:= 0x74000040
 
 
 export TEXT_OFFSET := $(textofs-y)
@@ -83,5 +85,6 @@ core-$(CONFIG_BOARD_ARM_REALVIEW) 	+= arch/arm/plat-realview/
 core-$(CONFIG_BOARD_HPTOUCHPAD)		+= arch/arm/plat-hptouchpad/
 core-$(CONFIG_BOARD_HTC_HD2)		+= arch/arm/plat-htchd2/
 core-$(CONFIG_BOARD_BCM2836)		+= arch/arm/plat-bcm2836/
+core-$(CONFIG_BOARD_IMX53_USBARMORY)	+= arch/arm/plat-imx53usbarmory/
 
 core-y				+= arch/arm/common/

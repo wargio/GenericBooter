@@ -33,7 +33,7 @@
 .section .bl_title,"aS"
 .globl _bl_title
 _bl_title:
-    .asciz "GenericBooter for HP-TouchPad, Copyright 2013, winocm."
+    .asciz "GenericBooter for IMX53-USBarmory, Copyright 2013, winocm."
     .align 4
 
 .section .bl_build,"aS"

@@ -53,6 +53,10 @@ config BOARD_BCM2836
 	bool "Broadcom BCM2836"
 	depends on PROC_CORTEX_A7
 
+config BOARD_IMX53_USBARMORY
+	bool "Inverse Path USB armory MkI"
+	depends on PROC_CORTEX_A8
+
 endchoice
 
 choice
