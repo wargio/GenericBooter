@@ -416,7 +416,7 @@ int prepare_devicetree(void)
         XMLFreeTag(tag);
     }
 
-    return false;
+    return true;
 #else
 #error - No device-tree support enabled.
 #endif
